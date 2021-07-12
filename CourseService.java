@@ -9,7 +9,6 @@ import az.orient.course.model.Teacher;
 
 public interface CourseService {
 
-    List<Student> getStudentList() throws Exception;
 
     List<Teacher> getTeacherList() throws Exception;
 
@@ -17,7 +16,6 @@ public interface CourseService {
 
     Student getStudentById(Long studentId) throws Exception;
 
-    boolean updateStudent(Student student, long studentId) throws Exception;
 
     boolean deleteStudent(Long studentId) throws Exception;
 
@@ -34,5 +32,6 @@ public interface CourseService {
     boolean updatePayment(Payment payment, long selectedId) throws Exception;
 
     Teacher getTeacherById(Long teacherId) throws Exception;
-
+    
+    System.out.println("Hello world");
 }
