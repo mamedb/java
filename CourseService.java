@@ -10,7 +10,7 @@ import az.orient.course.model.Teacher;
 public interface CourseService {
 
 
-    List<Teacher> getTeacherList() throws Exception;
+    List<Teacher, Student> getTeacherList() throws Exception;
 
     boolean addStudent(Student student) throws Exception;
 
